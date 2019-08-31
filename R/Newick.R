@@ -5,7 +5,7 @@
 #' @keywords cats
 #' @export
 #' @examples
-#' cat_function()  HALLO
+#' cat_function()  HALLO, HELLO
 
 myProgram <- function(x) {
   
