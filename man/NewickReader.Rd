@@ -2,7 +2,7 @@
 % Please edit documentation in R/Newick.R
 \name{NewickReader}
 \alias{NewickReader}
-\title{A Newick-Reader}
+\title{NewickReader}
 \usage{
 NewickReader(x)
 }
