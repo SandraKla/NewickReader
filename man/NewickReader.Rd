@@ -13,6 +13,5 @@ NewickReader(x)
 This function allows you to read Newick-Strings.
 }
 \examples{
-cat_function()
+((A,B),C) 
 }
-\keyword{cats}

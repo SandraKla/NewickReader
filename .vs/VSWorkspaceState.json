@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Data",
     "\\man",
-    "\\R"
+    "\\R",
+    "\\tests"
   ],
-  "SelectedNode": "\\R\\Newick.R",
+  "SelectedNode": "\\DESCRIPTION",
   "PreviewInSolutionExplorer": false
 }
