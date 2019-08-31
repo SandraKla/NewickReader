@@ -1,5 +1,5 @@
 Package: NewickReader
-Title: Reader for a Newick_String
+Title: A Reader for Newick-Strings
 Version: 1
 Authors@R: person("Sandra", "Kla", email = "")
 Description: This function is a reader for a Newick_String
