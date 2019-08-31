@@ -9,4 +9,4 @@ This is my first package for a easy Newick-String Reader for R. An example is li
 
 # Example
 
-
+![Newick](https://user-images.githubusercontent.com/52706003/64065223-38bb0d00-cc0b-11e9-8325-d3aec2b1f9d9.png)
