@@ -2,7 +2,7 @@ Package: PAKETSandra
 Title: Read a Newick_String
 Version: 0.0.0.1
 Authors@R: person("Sandra", "Kla", email = "first.last@example.com", role = c("aut", "cre"))
-Description: Nothing.
+Description: Nothing. Nichts.
 Depends: R (>= 3.5.1)
 License: Free
 Encoding: UTF-8
