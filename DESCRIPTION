@@ -1,8 +1,8 @@
-Package: PAKETSandra
-Title: Read a Newick_String
-Version: 0.0.0.1
-Authors@R: person("Sandra", "Kla", email = "first.last@example.com", role = c("aut", "cre"))
-Description: Nothing. Nichts.
+Package: NewickReader
+Title: Reader for a Newick_String
+Version: 1
+Authors@R: person("Sandra", "Kla", email = "")
+Description: This function is a reader for a Newick_String
 Depends: R (>= 3.5.1)
 License: Free
 Encoding: UTF-8
