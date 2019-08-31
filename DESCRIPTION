@@ -1,7 +1,7 @@
 Package: NewickReader
-Title: A Reader for Newick-Strings
-Version: 1
-Authors@R: person("Sandra", "Kla", email = "")
+Title: NewickReader
+Version: 0.0.0.9000
+Authors@R: person("Sandra", "Kla", email = "first.last@example.com", role = c("aut", "cre"))
 Description: This function is a reader for a Newick_String
 Depends: R (>= 3.5.1)
 License: Free
