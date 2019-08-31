@@ -1,13 +1,12 @@
-#' A Cat Function
+#' A Newick-reader
 #'
-#' This function allows you to express your love of cats.
-#' @param love Do you love cats? Defaults to TRUE.
-#' @keywords cats
-#' @export
-#' @examples
-#' cat_function()  HALLO
+#' This function allows you to read Newick-Strings
+#' @param Newick-String
+#' @export Dataframe with the Level in the Newick-String
+#' @examples ((A,B),C)
+#' Newick_reader()
 
-myProgram <- function(x) {
+Newick_reader <- function(x) {
   
   x <- strsplit(x,"") 
   
