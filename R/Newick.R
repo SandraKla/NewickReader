@@ -6,7 +6,7 @@
 #' @examples ((A,B),C)
 #' Newick_reader()
 
-Newick_reader <- function(x) {
+NewickReader <- function(x) {
   
   x <- strsplit(x,"") 
   
