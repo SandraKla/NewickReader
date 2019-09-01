@@ -3,7 +3,7 @@
 #' This function allows you to read Newick-Strings
 #' @param Newick-String
 #' @export Dataframe with the Level in the Newick-String
-#' @examples ((A,B),C)
+#' @examples ((A,B),C) or ((A,B,C),D)
 #' Newick_reader()
 
 NewickReader <- function(x) {
