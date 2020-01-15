@@ -2,16 +2,17 @@
 % Please edit documentation in R/Newick.R
 \name{NewickReader}
 \alias{NewickReader}
-\title{NewickReader}
+\title{A Newick-reader}
 \usage{
 NewickReader(x)
 }
 \arguments{
-\item{String}{A Newick-String}
+\item{x}{char}
 }
 \description{
-This function allows you to read Newick-Strings.
+This function allows you to read Newick-Strings
 }
 \examples{
-((A,B),C) 
+((A,B),C)
+Newick_reader()
 }

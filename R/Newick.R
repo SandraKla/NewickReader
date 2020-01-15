@@ -1,8 +1,8 @@
 #' A Newick-reader
 #'
 #' This function allows you to read Newick-Strings
-#' @param Newick-String
-#' @export Dataframe with the Level in the Newick-String
+#' @param x char
+#' @export
 #' @examples ((A,B),C)
 #' Newick_reader()
 
