@@ -2,11 +2,12 @@
 #'
 #' This function allows you to read Newick-Strings
 #' @param x char
+#' @param table give back table
+#' @examples 
+#' NewickReader("((A,B),C)")
 #' @export
-#' @examples ((A,B),C)
-#' Newick_reader()
 
-NewickReader <- function(x) {
+NewickReader <- function(x, table = TRUE) {
   
   x <- strsplit(x,"") 
   
@@ -56,8 +57,9 @@ NewickReader <- function(x) {
     index <- level_newick[j]
     letter_newick <- letters[j]
   for (i in index){
-    replication <- rep(" ",i*5)
-    print(cat(replication,letter_newick, fill = TRUE))}
+    replication <- rep("-",i*5)
+    paste0(cat("|",replication,letter_newick, fill = TRUE))}
   }
- return(storage)
+ if (table == TRUE){
+ return(storage)}
 }

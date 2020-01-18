@@ -4,15 +4,16 @@
 \alias{NewickReader}
 \title{A Newick-reader}
 \usage{
-NewickReader(x)
+NewickReader(x, table = TRUE)
 }
 \arguments{
 \item{x}{char}
+
+\item{table}{give back table}
 }
 \description{
 This function allows you to read Newick-Strings
 }
 \examples{
-((A,B),C)
-Newick_reader()
+NewickReader("((A,B),C)")
 }
