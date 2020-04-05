@@ -1,24 +1,21 @@
 library(testthat)
 context("Newick.R")
 
-# Run the script: "Newick.R"
-# Test the code from the Newick-string with test_file("test_newick.R") 
-
-dataset <- "((A,B),(((C,(D,E)),F),G),H)"
+dataset  <- "((A,B),(((C,(D,E)),F),G),H)"
 dataset1 <- "((A,B),C)"
 dataset2 <- "(((A,B),(C,(D,E)),F),G,H)"
 dataset3 <- "((((A,B),C),D),E)"
 dataset4 <- "(A,B)"
 
-dataset_false_levels <- "((((A,B)"
 dataset_false <- "(A,B),?)"
+dataset_false_levels <- "((((A,B)"
 dataset_false_brackets <- "(A,B),C)"
 
-result  <- data.frame(letters= c("A","B","C","D","E","F","G","H"),level_newick = c(2,2,4,5,5,3,2,1))
-result1 <- data.frame(letters= c("A","B","C"),level_newick = c(2,2,1))
-result2 <- data.frame(letters= c("A","B","C","D","E","F","G","H"),level_newick = c(3,3,3,4,4,2,1,1))
-result3 <- data.frame(letters= c("A","B","C","D","E"),level_newick = c(4,4,3,2,1))
-result4 <- data.frame(letters= c("A","B"),level_newick = c(1,1))
+result  <- data.frame(Letter= c("A","B","C","D","E","F","G","H"), Level = c(2,2,4,5,5,3,2,1))
+result1 <- data.frame(Letter= c("A","B","C"), Level = c(2,2,1))
+result2 <- data.frame(Letter= c("A","B","C","D","E","F","G","H"), Level = c(3,3,3,4,4,2,1,1))
+result3 <- data.frame(Letter= c("A","B","C","D","E"), Level = c(4,4,3,2,1))
+result4 <- data.frame(Letter= c("A","B"), Level = c(1,1))
 
 # Get the letters and count them for the first three datasets
 split_data <- strsplit(dataset,"") 
@@ -43,19 +40,19 @@ test_that("Right results",{
   expect_identical(NewickReader(dataset4), result4)
   
   # Is the max level_newick =< number of letters and greater than 0?
-  expect_lte(max(NewickReader(dataset)$level_newick) ,rows_data)
-  expect_lte(max(NewickReader(dataset1)$level_newick),rows_data1)
-  expect_lte(max(NewickReader(dataset2)$level_newick),rows_data2)
+  expect_lte(max(NewickReader(dataset)$Level) ,rows_data)
+  expect_lte(max(NewickReader(dataset1)$Level),rows_data1)
+  expect_lte(max(NewickReader(dataset2)$Level),rows_data2)
   
-  expect_gt(max(NewickReader(dataset)$level_newick) ,0)
-  expect_gt(max(NewickReader(dataset1)$level_newick),0)
-  expect_gt(max(NewickReader(dataset2)$level_newick),0)})
+  expect_gt(max(NewickReader(dataset)$Level) ,0)
+  expect_gt(max(NewickReader(dataset1)$Level),0)
+  expect_gt(max(NewickReader(dataset2)$Level),0)})
 
 test_that("Shape from the dataframe",{
   
   expect_is(NewickReader(dataset), "data.frame")
-  expect_is(NewickReader(dataset)$letters, "factor")
-  expect_is(NewickReader(dataset)$level_newick, "numeric")
+  expect_is(NewickReader(dataset)$Letter, "factor")
+  expect_is(NewickReader(dataset)$Level, "numeric")
   
   # Expect output is 2 columns [letters und level_newick] and as many rows as letters
   # Check with the first three datasets
@@ -66,7 +63,7 @@ test_that("Shape from the dataframe",{
   expect_equal(nrow(NewickReader(dataset1)), rows_data1)
   expect_equal(nrow(NewickReader(dataset2)), rows_data2)})
 
-test_that("Check if errors came from the false Newick-Strings",{
+test_that("Check if error when false Newick-Strings",{
 
   expect_error(NewickReader(dataset_false))
   expect_error(NewickReader(dataset_false_brackets))

@@ -1,11 +1,9 @@
 # The Newick-String-Reader
 
-This is a Newick-String Reader for R without the lengths only the level of the letters will be shown. 
+*In mathematics, Newick tree format (or Newick notation or New Hampshire tree format) is a way of representing graph-theoretical trees with edge lengths using parentheses and commas. It was adopted by James Archie, William H. E. Day, Joseph Felsenstein, Wayne Maddison, Christopher Meacham, F. James Rohlf, and David Swofford, at two meetings in 1986, the second of which was at Newick's restaurant in Dover, New Hampshire, US. The adopted format is a generalization of the format developed by Meacham in 1984 for the first tree-drawing programs in Felsenstein's PHYLIP package.* [Wikipedia](https://en.wikipedia.org/wiki/Newick_format)
 
-From [Wikipedia](https://en.wikipedia.org/wiki/Newick_format)
 
-*In mathematics, Newick tree format (or Newick notation or New Hampshire tree format) is a way of representing graph-theoretical trees with edge lengths using parentheses and commas. It was adopted by James Archie, William H. E. Day, Joseph Felsenstein, Wayne Maddison, Christopher Meacham, F. James Rohlf, and David Swofford, at two meetings in 1986, the second of which was at Newick's restaurant in Dover, New Hampshire, US. The adopted format is a generalization of the format developed by Meacham in 1984 for the first tree-drawing programs in Felsenstein's PHYLIP package.*
-
+This package allows you to read and print the Newick format, as well to get information about the individual levels of the letters.
 
 ## Installation
 
@@ -14,9 +12,9 @@ devtools::install_github("SandraKla/NewickReader")
 ```
 
 ## Example
-```bash
- NewickReader("(A,B,(D,E,(F)),C)")
-```
 
 ![Web app](man/figures/figure.png)
 
+## Reference
+
+Pavlopoulos, Georgios & Soldatos, Theodoros & Barbosa-Silva, Adriano & Schneider, Reinhard. (2010). A reference guide for tree analysis and visualization. BioData mining. 10.1186/1756-0381-3-1. 

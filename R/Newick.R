@@ -1,8 +1,8 @@
-#' A Newick-reader
+#' Newick-reader
 #'
-#' This function allows you to read Newick-Strings
-#' @param x char
-#' @param table give back table
+#' Function to read Newick strings
+#' @param x Dataset, like "((A,B),(((C,(D,E)),F),G),H)"
+#' @param table Parameter for the table with the levels to each letter
 #' @examples 
 #' NewickReader("((A,B),C)")
 #' @export
@@ -11,7 +11,7 @@ NewickReader <- function(x, table = TRUE) {
   
   x <- strsplit(x,"") 
   
-  for (i in x){ #Search the different characters
+  for (i in x){ # Search the different characters
       letter <- grepl("[A-Z]",i)
       bracket_open <- grepl("\\(",i);
       bracket_closed <- grepl("\\)",i);
@@ -42,7 +42,7 @@ NewickReader <- function(x, table = TRUE) {
 
   data_newick <- data.frame(brackets_open,brackets_closed,letter) 
   
-  # Calculate the sum of the index from the open and the closed brackets
+  # Calculate the sum from the open and the closed brackets
   # Make a Data Storage for the letters and their levels
   sum_brackets <- brackets_open+brackets_closed
   level_newick <- sum_brackets[letter]
@@ -57,9 +57,10 @@ NewickReader <- function(x, table = TRUE) {
     index <- level_newick[j]
     letter_newick <- letters[j]
   for (i in index){
-    replication <- rep("-",i*5)
+    replication <- rep("-",i*3)
     paste0(cat("|",replication,letter_newick, fill = TRUE))}
   }
  if (table == TRUE){
+   colnames(storage) <- c("Letter","Level")
  return(storage)}
 }
