@@ -1,5 +1,8 @@
 # The Newick-String-Reader
 
+[![Github All Releases](https://img.shields.io/github/downloads/SandraKla/NewickReader/total.svg)]()
+[![License](https://img.shields.io/github/license/SandraKla/NewickReader.svg)]()
+
 *In mathematics, Newick tree format (or Newick notation or New Hampshire tree format) is a way of representing graph-theoretical trees with edge lengths using parentheses and commas. It was adopted by James Archie, William H. E. Day, Joseph Felsenstein, Wayne Maddison, Christopher Meacham, F. James Rohlf, and David Swofford, at two meetings in 1986, the second of which was at Newick's restaurant in Dover, New Hampshire, US. The adopted format is a generalization of the format developed by Meacham in 1984 for the first tree-drawing programs in Felsenstein's PHYLIP package.* [Wikipedia](https://en.wikipedia.org/wiki/Newick_format)
 
 
