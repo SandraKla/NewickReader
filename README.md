@@ -1,4 +1,4 @@
-# The Newick-String-Reader
+# The [Newick-String-Reader](https://sandrakla.github.io/NewickReader/)
 
 [![Github All Releases](https://img.shields.io/github/downloads/SandraKla/NewickReader/total.svg)]()
 [![License](https://img.shields.io/github/license/SandraKla/NewickReader.svg)]()
