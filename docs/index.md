@@ -11,10 +11,6 @@ This package allows you to read and print the Newick format, as well to get info
 devtools::install_github("SandraKla/NewickReader")
 ```
 
-## Example
-
-![Web app](man/figures/figure.png)
-
 ## Reference
 
 Pavlopoulos, Georgios & Soldatos, Theodoros & Barbosa-Silva, Adriano & Schneider, Reinhard. (2010). A reference guide for tree analysis and visualization. BioData mining. 10.1186/1756-0381-3-1. 
