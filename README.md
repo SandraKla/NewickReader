@@ -10,6 +10,7 @@ This package allows you to read and print the Newick format, as well to get info
 ## Installation
 
 ```bash
+library(devtools)
 devtools::install_github("SandraKla/NewickReader")
 ```
 
