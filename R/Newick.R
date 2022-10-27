@@ -1,13 +1,16 @@
-#' Newick-reader
-#'
 #' Function to read Newick strings
-#' @param x Dataset, like "((A,B),(((C,(D,E)),F),G),H)"
-#' @param table Parameter for the table with the levels to each letter
+#' 
+#' @param x Dataset with Newick string
+#' @param table Parameter for showing the table with the levels to each letter
 #' @examples 
 #' NewickReader("((A,B),C)")
+#' NewickReader("((A,B),(((C,(D,E)),F),G),H)")
+#' @return The Newick levels as graphic or table
 #' @export
 
 NewickReader <- function(x, table = TRUE) {
+  
+  if(x == ""){ stop("Make sure x is not null") }
   
   x <- strsplit(x,"") 
   

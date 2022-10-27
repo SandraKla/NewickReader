@@ -2,18 +2,22 @@
 % Please edit documentation in R/Newick.R
 \name{NewickReader}
 \alias{NewickReader}
-\title{Newick-reader}
+\title{Function to read Newick strings}
 \usage{
 NewickReader(x, table = TRUE)
 }
 \arguments{
-\item{x}{Dataset, like "((A,B),(((C,(D,E)),F),G),H)"}
+\item{x}{Dataset with Newick string}
 
-\item{table}{Parameter for the table with the levels to each letter}
+\item{table}{Parameter for showing the table with the levels to each letter}
+}
+\value{
+The Newick levels as graphic or table
 }
 \description{
 Function to read Newick strings
 }
 \examples{
 NewickReader("((A,B),C)")
+NewickReader("((A,B),(((C,(D,E)),F),G),H)")
 }

@@ -1,11 +1,10 @@
 Package: NewickReader
-Title: NewickReader
-Version: 0.1.0
+Title: Read Newick strings
+Version: 0.1.1
 Authors@R: person("Sandra", "Kla", email = "sandrakla97@web.de", role = c("aut", "cre"))
 Description: Package to read the Newick format.
 License: GPL-3 | file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.2
 Suggests: testthat
-

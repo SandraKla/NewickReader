@@ -51,7 +51,7 @@ test_that("Right results",{
 test_that("Shape from the dataframe",{
   
   expect_is(NewickReader(dataset), "data.frame")
-  expect_is(NewickReader(dataset)$Letter, "factor")
+  expect_is(NewickReader(dataset)$Letter, "character")
   expect_is(NewickReader(dataset)$Level, "numeric")
   
   # Expect output is 2 columns [letters und level_newick] and as many rows as letters
